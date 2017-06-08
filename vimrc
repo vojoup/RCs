@@ -18,4 +18,4 @@ set showmatch                 " highlight matching [{()}]
 syntax enable                 " enable syntax processing
 nnoremap ; :
 inoremap wj <esc>
-colorscheme elflord 
+colorscheme murphy 
