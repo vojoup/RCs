@@ -4,6 +4,9 @@
 #purple-blue@green:tellow$
 PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 
+#My own PATH
+export PATH=$PATH:/home/vojta/Scripts/update:/home/vojta/SQL/opt/sqldeveloper
+
 #Colored ls output for dirs
 #here dirs are cyan
 LS_COLORS=$LS_COLORS:'di=1;36' ; export LS_COLORS
@@ -18,7 +21,7 @@ alias la='ls -la'
 
 
 # set PATH so it includes user's private bin directories
-export PATH="$HOME/bin:$HOME/.local/bin:$PATH:/home/vojta/Scripts/rc_updater:/home/vojta/SQL"
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 #Tiny-care-terminal variables
 # List of accounts to read the last tweet from, comma separated
