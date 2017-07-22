@@ -75,3 +75,8 @@ fi
 if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
+
+
+#Git bash prompt
+GIT_PROMPT_ONLY_IN_REPO=1
+  source ~/.bash-git-prompt/gitprompt.sh
