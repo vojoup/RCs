@@ -5,7 +5,7 @@
 PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 
 #My own PATH
-export PATH=$PATH:/home/vojta/Scripts/update:/home/vojta/SQL/opt/sqldeveloper
+export PATH=$PATH:/home/vojta/Scripts/rc_update:/home/vojta/SQL/opt/sqldeveloper
 
 #Colored ls output for dirs
 #here dirs are cyan
@@ -15,10 +15,11 @@ LS_COLORS=$LS_COLORS:'di=1;36' ; export LS_COLORS
 alias ..='cd ..'
 alias e='exit'
 alias webdev='ssh oupicvoj@webdev.fit.cvut.cz'
+alias fray='ssh oupivoj@fray3.fit.cvut.cz'
 alias home='cd ~'
 alias ll='ls -l --color=auto'
 alias la='ls -la'
-
+alias py='python3'
 
 # set PATH so it includes user's private bin directories
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
@@ -30,7 +31,7 @@ export TTC_BOTS='tinycarebot,selfcare_bot,magicrealismbot'
 
 # List of folders to look into for `git` commits, comma separated.
 
-export TTC_REPOS='~/RCs,~/Scripts'
+export TTC_REPOS='~/RCs,~/Scripts,~/PA1,~/python,~/java_script'
 
 # Location/zip code to check the weather for. Both 90210 and "San Francisco, CA"
 # _should_ be ok (the zip code doesn't always work -- use a location
@@ -55,3 +56,22 @@ export TTC_ACCESS_TOKEN_SECRET='wKm4D4Ri1sCWBjGD81DZukkBFlWobH5HzHRBPidmrNQuh'
 
 export TTC_GITBOT='gitlog'
 export TTC_REPOST_DEPTH=2
+
+
+
+#Completition
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+if [ -x /usr/bin/mint-fortune ]; then
+     /usr/bin/mint-fortune
+fi
