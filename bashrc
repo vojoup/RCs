@@ -1,8 +1,23 @@
+. ~/.git-prompt.sh
+
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWSTASHSTATE=1
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWUPSTREAM="auto verbose"
+
+
 #My own prompt
 #prompt format
 #HH:MM:SS-user@domain:actualDir$
 #purple-blue@green:tellow$
-PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+PS1='\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]$(__git_ps1 " (%s)")\$'
+
+
+
+#export GIT_PS1_SHOWDIRTYSTATE=1
+#export GIT_PS1_SHOWSTASHSTATE=1
+#export GIT_PS1_SHOWUNTRACKEDFILES=1
+#export GIT_PS1_SHOWUPSTREAM="auto verbose"
 
 #My own PATH
 export PATH=$PATH:/home/vojta/Scripts/rc_update:/home/vojta/SQL/opt/sqldeveloper
@@ -75,8 +90,3 @@ fi
 if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
-
-
-#Git bash prompt
-GIT_PROMPT_ONLY_IN_REPO=1
-  source ~/.bash-git-prompt/gitprompt.sh
