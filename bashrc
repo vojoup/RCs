@@ -35,6 +35,10 @@ alias home='cd ~'
 alias ll='ls -l --color=auto'
 alias la='ls -la'
 alias py='python3'
+#Git aliases
+alias gll='git ll'
+alias gps='git push'
+alias gpl='git pull'
 
 # set PATH so it includes user's private bin directories
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
