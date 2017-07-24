@@ -39,6 +39,7 @@ alias py='python3'
 alias gll='git ll'
 alias gps='git push'
 alias gpl='git pull'
+alias gst='git st'
 
 # set PATH so it includes user's private bin directories
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
