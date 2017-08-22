@@ -20,8 +20,7 @@ PS1='\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;
 #export GIT_PS1_SHOWUPSTREAM="auto verbose"
 
 #My own PATH
-export PATH=$PATH:/home/vojta/Scripts/rc_update:/home/vojta/SQL/opt/sqldeveloper
-
+export PATH=$PATH:/home/vojta/Scripts/rc_update:/home/vojta/SQL/opt/sqldeveloper:/home/vojta/Scripts/weather_check
 #Colored ls output for dirs
 #here dirs are cyan
 LS_COLORS=$LS_COLORS:'di=1;36' ; export LS_COLORS
@@ -40,6 +39,7 @@ alias gll='git ll'
 alias gps='git push'
 alias gpl='git pull'
 alias gst='git st'
+alias today='git log —since="0am" —all'
 
 # set PATH so it includes user's private bin directories
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
