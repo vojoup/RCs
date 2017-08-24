@@ -20,7 +20,7 @@ PS1='\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;
 #export GIT_PS1_SHOWUPSTREAM="auto verbose"
 
 #My own PATH
-export PATH=$PATH:/home/vojta/Scripts/rc_update:/home/vojta/SQL/opt/sqldeveloper:/home/vojta/Scripts/weather_check
+export PATH=$PATH:/home/vojta/Scripts/rc_update:/home/vojta/SQL/opt/sqldeveloper:/home/vojta/Scripts/weather_check:/home/vojta/Scripts/update
 #Colored ls output for dirs
 #here dirs are cyan
 LS_COLORS=$LS_COLORS:'di=1;36' ; export LS_COLORS
@@ -34,6 +34,7 @@ alias home='cd ~'
 alias ll='ls -l --color=auto'
 alias la='ls -la'
 alias py='python3'
+alias atach='tmux attach -t'
 #Git aliases
 alias gll='git ll'
 alias gps='git push'
