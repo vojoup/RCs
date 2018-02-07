@@ -13,4 +13,6 @@
 	co = checkout
 	br = branch
 	ll = log --oneline --graph --all --decorate
+	todo = log --commiter=Vojta --since=1.week --grep=TODO:
+	standup = log --since=8am --branches
     dc = diff --cached
